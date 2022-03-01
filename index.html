@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz App</title>
+</head>
+<body>
+    <div id="show" class="container0">
+        <div class="box">
+            <h1>Question::<i id="quiz"></i></h1>
+            <div class="option">
+                <ul>
+                    <li><input id="a" type="radio" class="answer" name="option"><label for="a" id="a_text">Question1</label></li>
+                    <li><input id="b" type="radio" class="answer" name="option"><label for="b" id="b_text">Question2</label></li>
+                    <li><input id="c" type="radio" class="answer" name="option"><label for="c" id="c_text">Question3</label></li>
+                    <li><input id="d" type="radio" class="answer" name="option"><label for="d" id="d_text">Question4</label></li>
+                </ul>
+            </div>
+            <input id="submit" type="submit">
+            <input id="start" onclick="start()" type="submit" value="Lets Begin">
+        </div>
+    </div>
+    <div id="modal" class="container">
+        <img id="gif" src="congrats.gif" alt="gif">
+        <div class="box">
+            <center><h1>Welcome To MyQuiz</h1></center>
+            <span class="pos">SCORE</span><span class="poss">VISITED</span>
+            <div class="window">
+                <input id="score" readonly placeholder="000" type="text">
+                <input id="correct" readonly placeholder="0/0" type="text">
+            </div>
+            <input id="start" onclick="begin()" type="submit" value="start">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
